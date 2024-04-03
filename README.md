@@ -2,6 +2,12 @@
 
 This script asks for OTP seed and displays OTP in a loop to support one-by-one manual migration of OTP codes.
 
+## Dependencies
+
+```shell
+sudo apt install qrencode
+```
+
 ## How to migrate (on `Authenticator Plus` example)
 
 1. Export database from the app (`Authenticator Plus` supports Dropbox backup).
@@ -13,4 +19,7 @@ SELECT email, secret FROM accounts;
 ```
 
 4. Copy the OTP seeds one by one to the prompt from `qrcodeme.sh` to show QR code that could be scanned by other application.
-5. Purge database backup from disk (Linux `shred` or Windows SysInternals `sdelete`).
+
+![Example of generated OTP QR code](qrcodeme.png)
+
+6. Purge database backup from disk (Linux `shred` or Windows SysInternals `sdelete`).
