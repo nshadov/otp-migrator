@@ -18,7 +18,7 @@ sudo apt install qrencode
 SELECT email, secret FROM accounts;
 ```
 
-4. Copy the OTP seeds one by one to the prompt from `qrcodeme.sh` to show QR code that could be scanned by other application.
+4. Copy the OTP seeds one by one to the prompt from `qrcodeme.sh` to show QR code that could be scanned by other application. It will be displayed in terminal using ASCII art and could be scanned with mobile phone.
 
 ![Example of generated OTP QR code](qrcodeme.png)
 
