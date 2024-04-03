@@ -10,7 +10,7 @@ sudo apt install qrencode
 
 ## How to migrate (on `Authenticator Plus` example)
 
-1. Export database from the app (`Authenticator Plus` supports Dropbox backup).
+1. Export database from the app (`Authenticator Plus` supports Dropbox backup. Filename would be `authplus.db`).
 2. Open the database in database reader (`Authenticator Plus` uses SQLite database with SQLCipher encryption - popular solution on Android. It could easily be opened using [SQLiteBrowser](https://sqlitebrowser.org))
 3. List OTP codes. I have used this SQL statement:
 
